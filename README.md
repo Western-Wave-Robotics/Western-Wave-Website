@@ -1,5 +1,5 @@
-# Western Wave DEV BRANCH
-WEB DEVELOPMENT IN PROGRESS...
+# Western Wave Robotics Website
+MUN x CNA Student Team
 
 ## 🧞 Commands
 
