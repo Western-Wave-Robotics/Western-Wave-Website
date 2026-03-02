@@ -1,9 +1,9 @@
 ---
 import Menu from "@assets/Menu.astro";
 import { Image } from "astro:assets";
-import type { HeaderProps } from "@types";
+import type { SiteConfig } from "@types";
 
-type Props = HeaderProps;
+type Props = Pick<SiteConfig, "siteLogo" | "navLinks">
 
 const { siteLogo, navLinks } = Astro.props;
 ---
