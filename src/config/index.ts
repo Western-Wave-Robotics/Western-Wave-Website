@@ -6,11 +6,10 @@ export const SITE_CONFIG: SiteConfig = {
   copyright: "Western Wave Robotics",
   description: "Competitive student team competing in the MATE ROV competition",
   siteLogo: "/westernwave_logo.png", // UPDATE
-  // Header Navbar links
   navLinks: [
     { text: "Home", href: "/" },
-    { text: "About", href: "/about" }, // Change to scroll to about section
-    { text: "Sponsors", href: "/sponsors" },
+    { text: "About", href: "/about" }, // Change to scroll
+    { text: "Sponsors", href: "/sponsors" }, //Change to scroll
     { text: "Contact", href: "/contact" },
   ],
   socialLinks: [
