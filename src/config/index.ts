@@ -1,13 +1,15 @@
-import type { HomePage, SiteConfig,  } from "../types";
+import type { SiteConfig } from "@types";
 
 export const SITE_CONFIG: SiteConfig = {
   title: "Western Wave Robotics",
-  author: "Nicholas Balsom",
+  authors: "Nicholas Balsom",
+  company: "Western Wave Robotics",
   description: "Competitive student team competing in the MATE ROV competition",
   siteLogo: "/westernwave_logo.png", // UPDATE
+  // Header Navbar links
   navLinks: [
     { text: "Home", href: "/" },
-    { text: "About", href: "/about" },
+    { text: "About", href: "/about" }, // Change to scroll to about section
     { text: "Sponsors", href: "/sponsors" },
     { text: "Contact", href: "/contact" },
   ],
@@ -17,27 +19,4 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   socialImage: "/westernwave_logo.png", // UPDATE
   canonicalURL: "/", // UPDATE
-};
-
-export const HOME_PAGE: HomePage = {
-  hero: {
-    team: "Western Wave Robotics",
-    img: "/ROV_testing.jpg"
-  },
-  aboutus: {
-    title: "Who Are We?",
-    content: "Western Wave is a team of undergraduate students from College of the North Atlantic (CNA) and Memorial University’s Grenfell Campus. We are a student design team that designs and builds remotely operated vehicles (ROVs) and competes in the MATE ROV Competition. We are the first and only undergraduate ROV team in Corner Brook, Newfoundland and Labrador.",
-    img: {src: "/awards_ceramony_2025.jpg", alt: "Team Picture"},
-    link: {text: "Learn more about us", herf: "/about"}
-  },
-  competition: {
-    title: "MATE ROV COMP",
-    content: "",
-    img: {src: "", alt: ""},
-    link: {text: "", herf: ""}
-  },
-  sponsors: {
-    title: "Sponsors",
-    content: "home.sponsors -> content here"
-  }
 };

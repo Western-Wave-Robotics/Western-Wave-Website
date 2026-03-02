@@ -10,7 +10,8 @@ const {
   	description,
   	siteLogo,
   	navLinks,
-  	author,
+  	authors,
+		company,
   	socialLinks,
   	socialImage,
   	canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
@@ -24,7 +25,7 @@ const ogImgUrl = canonicalURL + socialImage;
   <head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
-		<meta name="author" content={author} />
+		<meta name="author" content={authors} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/png" href="/westernwave_logo.png" />
 		<meta name="generator" content={Astro.generator} />
@@ -41,6 +42,6 @@ const ogImgUrl = canonicalURL + socialImage;
 		<main class="min-w-screen">
 			<slot />
 		</main>
-		<Footer author={author} socialLinks={socialLinks} />
+		<Footer company={company} socialLinks={socialLinks} />
 	</body>
 </html>
