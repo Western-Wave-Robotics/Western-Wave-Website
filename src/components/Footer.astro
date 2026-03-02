@@ -1,9 +1,9 @@
 ---
 import type { SiteConfig } from "@types";
 
-type Props = Pick<SiteConfig, "company" | "socialLinks">;
+type Props = Pick<SiteConfig, "copyright" | "socialLinks">;
 
-const {company, socialLinks } = Astro.props;
+const {copyright, socialLinks } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
 
@@ -26,6 +26,6 @@ const currentYear = new Date().getFullYear();
     }
   </ul>
   <p class="text-xs">
-    {company} © {currentYear}.
+    {copyright} © {currentYear}.
   </p>
 </footer>
